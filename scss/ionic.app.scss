@@ -1,0 +1,207 @@
+/*
+To customize the look and feel of Ionic, you can override the variables
+in ionic's _variables.scss file.
+
+For example, you might change some of the default colors:
+
+$light:                           #fff !default;
+$stable:                          #f8f8f8 !default;
+$positive:                        #387ef5 !default;
+$calm:                            #11c1f3 !default;
+$balanced:                        #33cd5f !default;
+$energized:                       #ffc900 !default;
+$assertive:                       #ef473a !default;
+$royal:                           #886aea !default;
+$dark:                            #444 !default;
+*/
+
+// The path for our ionicons font files, relative to the built CSS in www/css
+$ionicons-font-path: "../lib/ionic/fonts" !default;
+
+// Include all of Ionic
+@import "www/lib/ionic/scss/ionic";
+
+.clearfix {
+	&:before, 
+	&:after {
+		display: table;
+		content: ' ';
+		line-height: 0;
+	}
+
+	&:after {
+		clear: both;
+	}
+}
+
+.temp {
+	font-size: 5rem;
+	font-weight: lighter;
+}
+
+.degree-symbol {
+	font-size: 2rem;
+}
+
+.weada-header {
+	font-weight: lighter;
+	font-size: 0.3rem;
+	text-align: center;
+	background: #fff;
+    padding: 12px 0;
+    margin: -18px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    position: relative;
+    margin-bottom: 12px;
+}
+
+.arrow-down {
+	width: 100px;
+	height: 100px;
+	position: absolute;
+	top: 70px;
+	margin: 0 auto;
+	left: 0;
+	right: 0;
+	overflow: hidden;
+	//box-shadow: 0 16px 10px -17px rgba(0, 0, 0, 0.5);
+
+	&:after {
+		content: '';
+		position: absolute;
+		width: 35px;
+		height: 35px;
+		background: #fff;
+		-webkit-transform: rotate(45deg);
+		-moz-transform: rotate(45deg);
+		-ms-transform: rotate(45deg);
+		transform: rotate(45deg);
+		top: -25px;
+		left: 0;
+		right: 0;
+		margin: 0 auto;
+		box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+	}
+}
+
+.summary {
+	padding: 18px;
+	text-align: center;
+	box-shadow: 0 0 50px rgba(0, 0, 0, 0.3) inset;
+
+	h2 {
+		font-weight: lighter;
+	}
+
+	h5 {
+		margin-bottom: 24px;
+	}
+
+	.summary-text {
+		font-size: 2rem;
+		margin-bottom: 54px;
+	}
+
+	.summary-extra {
+		margin-top: 48px;
+	    font-size: 1.2rem;
+	    line-height: 1.5rem;
+	}
+}
+
+.climate-icon {
+	line-height: 100%;
+	font-size: 10rem;
+}
+
+.cities {
+	@extend .clearfix;
+	padding: 18px;
+	text-align: center;
+	//box-shadow: 0 0 50px rgba(0, 0, 0, 0.3) inset;
+
+	.city-change {
+		display: block;
+		width: 100%;
+		cursor: pointer;
+		@extend .clearfix;
+	}
+
+	.city-name {
+		float: left;
+	}
+
+	.city-coords {
+		float: right;
+		font-size: 0.8rem;
+    	color: #aaa;
+	}
+
+	.list {
+		.item {
+			box-shadow: 0 0 24px 0px rgba(109, 59, 10, 0.1) inset;
+			border-left: none;
+			border-right: none;
+			margin-left: -18px;
+			margin-right: -18px;
+		}
+	}
+}
+
+.cities-header {
+	margin-bottom: 24px;
+	h2 {
+		font-weight: lighter;
+	}
+}
+
+.settings {
+	padding: 18px;
+	text-align: center;
+	box-shadow: 0 0 50px rgba(0, 0, 0, 0.3) inset;
+}
+
+.settings-header {
+	margin-bottom: 24px;
+	h2 {
+		font-weight: lighter;
+	}
+}
+
+.setting-empty {
+	margin-top: 36px;
+    font-size: 10rem;
+}
+
+// Mood classes
+.sunny-mood {
+	background: #ffc917;
+}
+
+.sunny-cloud-mood {
+	background: #fff9e4;
+}
+        
+.nice-night-mood {
+	background: #520330;
+	color: #fff;
+}
+
+.night-cloudy-mood {
+	background: #333;
+	color: #fff;
+}
+
+.grey-mood {
+	background: #b9b9b9;
+}
+
+.so-so-mood {
+	background: #d5d5d5;
+}
+
+.frieza-mood {
+	background: #91daf7;
+}
+
+

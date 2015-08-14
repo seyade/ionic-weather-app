@@ -1,0 +1,15 @@
+<ion-view view-title="Cities">
+  <ion-content class="has-header cities">
+    <header class="weada-header cities-header">
+       <h2>Select a city</h2>
+       <span class="arrow-down"></span>
+    </header>
+
+    <ion-list>
+      <ion-item ng-repeat="city in cities">
+        <a class="city-change" ng-click="changeCity('{{ city.id }}')"><span class="city-name">{{ city.name }}</span> <span class="city-coords">coords {{ city.lat }} | {{ city.lgn }}</span></a>
+      </ion-item>
+    </ion-list>
+
+  </ion-content>
+</ion-view>

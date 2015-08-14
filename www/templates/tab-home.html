@@ -1,0 +1,17 @@
+<ion-view view-title="Weada" cache-view="false">
+  <ion-content class="has-header summary" ng-class="applyMood()">
+    <header class="weada-header summary-header">
+      <h2>{{ city }}</h2>
+      <span class="arrow-down"></span>
+    </header>
+
+    <span class="climate-icon" ng-class="iconType()" id="current.icon"></span> 
+    
+    <p class="summary-text">{{ current.currently.summary }}</p>
+    <p class="temp large">{{ current.currently.temperature | number:0 }}&#176;C</p>
+
+    <div class="summary-extra">
+      <p>{{ current.daily.summary }}</p>
+    </div>
+  </ion-content>
+</ion-view>
